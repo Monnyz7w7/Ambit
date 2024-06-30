@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MusicAmbit! | StreamCode</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 id="title" class="font">MusicAmbit</h1>
+    <button id="start-btn" class="font">Start!</button>
+
+    <secion id="visualizer" style="display: none;">
+        <video id="video" loop autoplay muted>
+            <source src="assets/video/visualizer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </secion>
+
+    <section id="grid-section" style="display: none;">
+
+        <div id="grid-dx">
+            <button class="grid-btn" data-sound="1">DO#</button>
+            <button class="grid-btn" data-sound="2">DO</button>
+            <button class="grid-btn" data-sound="3">RE</button>
+            <button class="grid-btn" data-sound="4">MI</button>
+            <button class="grid-btn" data-sound="5">FA</button>
+            <button class="grid-btn" data-sound="6">SOL</button>
+            <button class="grid-btn" data-sound="7">LA</button>
+            <button class="grid-btn" data-sound="8">SI</button>
+        </div>
+
+        <div id="grid-sx">
+            <button class="grid-btn" data-sound="A">TIN</button>
+            <button class="grid-btn" data-sound="B">PUNCH</button>
+            <button class="grid-btn" data-sound="C">PUM</button>
+            <button class="grid-btn" data-sound="D">FIU</button>
+            <button class="grid-btn" data-sound="E">FUM</button>
+            <button class="grid-btn" data-sound="F">PA</button>
+            <button class="grid-btn" data-sound="G">PRU</button>
+            <button class="grid-btn" data-sound="H">TRR</button>
+            <button class="grid-btn" data-sound="I">ZSS</button>
+        </div>
+
+    </section>
+
+    <!-- AUDIO -->
+    <audio id="1" src="assets/audio/note/doX.mp3"></audio>
+    <audio id="2" src="assets/audio/note/do.mp3"></audio>
+    <audio id="3" src="assets/audio/note/re.mp3"></audio>
+    <audio id="4" src="assets/audio/note/mi.mp3"></audio>
+    <audio id="5" src="assets/audio/note/fa.mp3"></audio>
+    <audio id="6" src="assets/audio/note/sol.mp3"></audio>
+    <audio id="7" src="assets/audio/note/la.mp3"></audio>
+    <audio id="8" src="assets/audio/note/si.mp3"></audio>
+
+    <audio id="A" src="assets/audio/effetti/tin.mp3"></audio>
+    <audio id="B" src="assets/audio/effetti/puch.mp3"></audio>
+    <audio id="C" src="assets/audio/effetti/pum.mp3"></audio>
+    <audio id="D" src="assets/audio/effetti/fiiuum.mp3"></audio>
+    <audio id="E" src="assets/audio/effetti/fum.mp3"></audio>
+    <audio id="F" src="assets/audio/effetti/pa.mp3"></audio>
+    <audio id="G" src="assets/audio/effetti/pruuum.mp3"></audio>
+    <audio id="H" src="assets/audio/effetti/trrrr.mp3"></audio>
+    <audio id="I" src="assets/audio/effetti/zzzssss.mp3"></audio>
+
+    <!-- SECRET -->
+    <!-- il messaggio che comparirà dopo 60 secondi -->
+    <div id="message" class="font" style="display: none;">Basta musica.<br>Entrate su CoetusSMP uwu!</div>
+
+</body>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
